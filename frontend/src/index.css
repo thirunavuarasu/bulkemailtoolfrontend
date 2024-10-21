@@ -1,0 +1,84 @@
+/* General Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: antiquewhite; /* Page background */
+}
+
+/* Navbar Styles */
+.navbar {
+  display: flex; /* Use flexbox for better alignment */
+  justify-content: center; /* Center items */
+  align-items: center; /* Center vertically */
+  padding: 10px 0; /* Padding for spacing */
+  background-color: antiquewhite; /* Navbar background */
+  border-bottom: 2px solid #535bf2; /* Bottom border */
+}
+
+.navbar-brand {
+  font-weight: bold;
+  font-size: 1.5em; /* Increased font size */
+  color: #535bf2; /* Brand color */
+}
+
+.nav-link {
+  font-weight: 500;
+  margin: 0 15px; /* Spacing between links */
+  color: #535bf2; /* Default link color */
+  text-decoration: none; /* Remove underline */
+}
+
+.nav-link:hover {
+  color: #00b365; /* Change color on hover */
+}
+
+/* Container Styles */
+.container {
+  max-width: 400px; /* Limit the width of the form */
+  margin: auto; /* Center the form */
+  padding: 20px;
+  background-color: white; /* Form background */
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+/* Heading Styles */
+h2 {
+  text-align: center; /* Center the title */
+  font-weight: 600; /* Bold title */
+}
+
+/* Form Control Styles */
+.form-control {
+  border: 1px solid #ced4da; /* Light border */
+  border-radius: 0.25rem; /* Rounded corners */
+  transition: border-color 0.3s; /* Smooth transition */
+}
+
+.form-control:focus {
+  border-color: #80bdff; /* Change border color on focus */
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25); /* Add shadow */
+}
+
+/* Button Styles */
+.btn-primary {
+  background-color: #9dff00; /* Button color */
+  border: none; /* Remove border */
+  width: 100%; /* Full width */
+  padding: 10px; /* Padding for buttons */
+  font-weight: bold; /* Bold text */
+}
+
+.btn-primary:hover {
+  background-color: #00b365; /* Darker shade on hover */
+}
+
+/* Error Message Styles */
+.text-danger {
+  font-size: 0.875em; /* Smaller font for error messages */
+  margin-top: 5px; /* Spacing above error messages */
+}
