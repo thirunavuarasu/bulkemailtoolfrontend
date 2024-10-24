@@ -3,9 +3,29 @@ import { Formik, Form, Field, ErrorMessage } from 'formik';
 import * as Yup from 'yup';
 
 const Register = () => {
-  const handleSubmit = (values) => {
-    // Handle the registration logic here (e.g., API call)
-    console.log('Registration Values:', values);
+  const handleSubmit = async (values) => {
+    try {
+      // Example API call
+      const response = await fetch('https://your-api-endpoint.com/register', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(values),
+      });
+
+      if (!response.ok) {
+        throw new Error('Network response was not ok');
+      }
+
+      const data = await response.json();
+      console.log('Registration Successful:', data);
+      // Handle successful registration (e.g., redirect or display success message)
+
+    } catch (error) {
+      console.error('Registration Error:', error);
+      // Optionally, show an error message to the user
+    }
   };
 
   const validationSchema = Yup.object({
